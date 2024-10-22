@@ -21,11 +21,12 @@ const router = createBrowserRouter(
             <Route path="/contact" element={<ContactPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Route>
-    )
+    ),
+    { basename: "/monito-demo" }  // Specify the base path for the router
 );
 
 const App = () => {
     return <RouterProvider router={router}/>;
-
 };
+
 export default App;
