@@ -172,29 +172,24 @@ const PetListings = ({top = true, isHome = false, sorting = "Sort by: Name ( A -
 
                 // Color filter
                 if (color !== null && !item.breed.toLowerCase().includes(color.toLowerCase())) {
-                    console.log("color");
                     return false;
                 }
 
                 // Price filter (minimum)
                 if (priceMin !== null && parseInt(item.price.replaceAll(",", "")) < priceMin) {
-                    console.log("priceMin");
                     return false;
                 }
 
                 // Price filter (maximum)
                 if (priceMax !== null && parseInt(item.price.replaceAll(",", "")) > priceMax) {
-                    console.log("priceMax");
                     return false;
                 }
 
                 // Size filter
                 if (size !== null && !item.breed.toLowerCase().includes(size.toLowerCase())) {
-                    console.log("size");
                     return false;
                 }
 
-                console.log("true");
                 // If all conditions pass, keep the item
                 return true;
 
