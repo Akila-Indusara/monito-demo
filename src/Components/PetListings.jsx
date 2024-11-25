@@ -216,8 +216,8 @@ const PetListings = ({top = true, isHome = false, sorting = "Sort by: Name ( A -
 
 
     // Duplicate the pets array
-    const dupPets =  duplicateObjects(pets, 20);
-    //const dupPets = pets;
+    //const dupPets =  duplicateObjects(pets, 20);
+    const dupPets = pets;
 
     // displayed pets array
     const allPets = isHome ? dupPets.slice(0, chunkSize) : dupPets;
