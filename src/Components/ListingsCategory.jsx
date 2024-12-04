@@ -276,7 +276,7 @@ const ListingsCategory = ({ category }) => {
                                 <MdKeyboardArrowDown />
                             </div>
 
-                            {/* Dropdown menu */}
+                            {/* sort by dropdown */}
                             {isDropDownOpen && (
                                 <ul className="absolute left-0  w-full bg-white border-2 border-t-0  rounded-b-3xl shadow-lg z-10">
                                     <li onClick={() => handleDropdownClick("Sort by: Name ( A - Z )")}

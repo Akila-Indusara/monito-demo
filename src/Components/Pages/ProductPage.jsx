@@ -309,7 +309,7 @@ const ProductPage = () => {
                                     <BsChatLeftDots/>&nbsp; Chat with Monito
                                 </button>
                             </div>
-                            {Object.entries(productItem?.item || {}).map(([key, value], index, array) => (
+                            {Object.entries(productItem?.item || {}).map(([key, value], index) => (
                                 <div key={index} className={`${(key === "image") ? "hidden" : ""} flex my-3 border-b py-2`}>
                                     <p className="text-gray-500 flex w-1/2"> {key} </p>
                                     {/* Check if this is the last item */}
